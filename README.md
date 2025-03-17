@@ -1,7 +1,5 @@
 # 📈 생성형 AI 기반 미국 ETF 추천 시스템
 
-![Project Banner](https://example.com/banner.png)
-
 ## 📝 프로젝트 개요
 **NH 투자증권 X 빅콘테스트 2024**  
 
