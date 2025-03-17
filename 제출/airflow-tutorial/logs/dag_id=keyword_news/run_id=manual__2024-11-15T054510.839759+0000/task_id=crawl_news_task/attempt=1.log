@@ -1,0 +1,82 @@
+[2024-11-15T05:45:30.885+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-15T05:45:30.930+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: keyword_news.crawl_news_task manual__2024-11-15T05:45:10.839759+00:00 [queued]>
+[2024-11-15T05:45:30.945+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: keyword_news.crawl_news_task manual__2024-11-15T05:45:10.839759+00:00 [queued]>
+[2024-11-15T05:45:30.947+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-11-15T05:45:30.978+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): crawl_news_task> on 2024-11-15 05:45:10.839759+00:00
+[2024-11-15T05:45:30.997+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=166) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-15T05:45:31.000+0000] {standard_task_runner.py:72} INFO - Started process 168 to run task
+[2024-11-15T05:45:31.005+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'keyword_news', 'crawl_news_task', 'manual__2024-11-15T05:45:10.839759+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/nh_keyword_news_crawling.py', '--cfg-path', '/tmp/tmpbjyg4_td']
+[2024-11-15T05:45:31.008+0000] {standard_task_runner.py:105} INFO - Job 23: Subtask crawl_news_task
+[2024-11-15T05:45:31.108+0000] {task_command.py:467} INFO - Running <TaskInstance: keyword_news.crawl_news_task manual__2024-11-15T05:45:10.839759+00:00 [running]> on host 0d5fac489432
+[2024-11-15T05:45:31.305+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='keyword_news' AIRFLOW_CTX_TASK_ID='crawl_news_task' AIRFLOW_CTX_EXECUTION_DATE='2024-11-15T05:45:10.839759+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-15T05:45:10.839759+00:00'
+[2024-11-15T05:45:31.308+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-15T05:45:31.309+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-15T05:45:31.310+0000] {logging_mixin.py:190} INFO - Current task name:crawl_news_task state:running start_date:2024-11-15 05:45:30.931239+00:00
+[2024-11-15T05:45:31.311+0000] {logging_mixin.py:190} INFO - Dag name:keyword_news and current dag run status:running
+[2024-11-15T05:45:31.311+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-15T05:45:31.313+0000] {logging_mixin.py:190} INFO - Crawling news for '기술 관련주' on 2024.11.15
+[2024-11-15T05:45:42.148+0000] {logging_mixin.py:190} INFO - Crawling news for '에너지 관련주' on 2024.11.15
+[2024-11-15T05:45:52.191+0000] {logging_mixin.py:190} INFO - Crawling news for '회사채' on 2024.11.15
+[2024-11-15T05:46:00.820+0000] {logging_mixin.py:190} INFO - Crawling news for '아프리카' on 2024.11.15
+[2024-11-15T05:46:07.449+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 채권' on 2024.11.15
+[2024-11-15T05:46:13.031+0000] {logging_mixin.py:190} INFO - Crawling news for '헬스케어 관련주' on 2024.11.15
+[2024-11-15T05:46:19.478+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 주식' on 2024.11.15
+[2024-11-15T05:46:26.290+0000] {logging_mixin.py:190} INFO - Crawling news for '부동산 관련주' on 2024.11.15
+[2024-11-15T05:46:33.961+0000] {logging_mixin.py:190} INFO - Crawling news for 'AMD' on 2024.11.15
+[2024-11-15T05:46:41.924+0000] {logging_mixin.py:190} INFO - Crawling news for '경기 소비재 관련주' on 2024.11.15
+[2024-11-15T05:46:44.102+0000] {logging_mixin.py:190} INFO - No news found for 경기 소비재 관련주 on 2024.11.15
+[2024-11-15T05:46:52.105+0000] {logging_mixin.py:190} INFO - Crawling news for '임의 소비재 관련주' on 2024.11.15
+[2024-11-15T05:46:53.410+0000] {logging_mixin.py:190} INFO - No news found for 임의 소비재 관련주 on 2024.11.15
+[2024-11-15T05:47:03.404+0000] {logging_mixin.py:190} INFO - Crawling news for '아르헨티나 주식' on 2024.11.15
+[2024-11-15T05:47:11.636+0000] {logging_mixin.py:190} INFO - Crawling news for '산업재 관련주' on 2024.11.15
+[2024-11-15T05:47:21.063+0000] {logging_mixin.py:190} INFO - Crawling news for '중국 주식' on 2024.11.15
+[2024-11-15T05:47:31.883+0000] {logging_mixin.py:190} INFO - Crawling news for '금융 서비스 관련주' on 2024.11.15
+[2024-11-15T05:47:40.079+0000] {logging_mixin.py:190} INFO - No news found for 금융 서비스 관련주 on 2024.11.15
+[2024-11-15T05:47:45.082+0000] {logging_mixin.py:190} INFO - Crawling news for '브라질' on 2024.11.15
+[2024-11-15T05:48:02.570+0000] {logging_mixin.py:190} INFO - Crawling news for 'S&P 500' on 2024.11.15
+[2024-11-15T05:48:09.404+0000] {logging_mixin.py:190} INFO - Crawling news for '기초 소재 관련주' on 2024.11.15
+[2024-11-15T05:48:12.469+0000] {logging_mixin.py:190} INFO - No news found for 기초 소재 관련주 on 2024.11.15
+[2024-11-15T05:48:20.474+0000] {logging_mixin.py:190} INFO - Crawling news for '중국' on 2024.11.15
+[2024-11-15T05:48:27.739+0000] {logging_mixin.py:190} INFO - Crawling news for '다우존스' on 2024.11.15
+[2024-11-15T05:48:37.554+0000] {logging_mixin.py:190} INFO - Crawling news for 'DIS' on 2024.11.15
+[2024-11-15T05:48:40.377+0000] {logging_mixin.py:190} INFO - No news found for DIS on 2024.11.15
+[2024-11-15T05:48:45.381+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 국채' on 2024.11.15
+[2024-11-15T05:48:56.321+0000] {logging_mixin.py:190} INFO - Crawling news for '통신 서비스 관련주' on 2024.11.15
+[2024-11-15T05:49:03.610+0000] {logging_mixin.py:190} INFO - No news found for 통신 서비스 관련주 on 2024.11.15
+[2024-11-15T05:49:09.612+0000] {logging_mixin.py:190} INFO - Crawling news for '호주 주식' on 2024.11.15
+[2024-11-15T05:49:25.010+0000] {logging_mixin.py:190} INFO - Crawling news for '독일 주식' on 2024.11.15
+[2024-11-15T05:49:34.838+0000] {logging_mixin.py:190} INFO - Crawling news for '일본 주식' on 2024.11.15
+[2024-11-15T05:50:04.941+0000] {logging_mixin.py:190} INFO - Error fetching news for 일본 주식 on 2024.11.15: HTTPSConnectionPool(host='search.naver.com', port=443): Max retries exceeded with url: /search.naver?where=news&query=%EC%9D%BC%EB%B3%B8%20%EC%A3%BC%EC%8B%9D&sm=tab_opt&sort=0&photo=0&field=0&pd=3&ds=2024.11.15&de=2024.11.15&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from20241115to20241115,a:all&start=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f2e75e90770>: Failed to resolve 'search.naver.com' ([Errno -3] Temporary failure in name resolution)"))
+[2024-11-15T05:50:09.942+0000] {job.py:229} INFO - Heartbeat recovered after 41.54 seconds
+[2024-11-15T05:50:14.853+0000] {logging_mixin.py:190} INFO - Crawling news for '멕시코 주식' on 2024.11.15
+[2024-11-15T05:50:22.199+0000] {logging_mixin.py:190} INFO - Crawling news for '한국 주식' on 2024.11.15
+[2024-11-15T05:50:38.035+0000] {logging_mixin.py:190} INFO - Crawling news for '브라질 주식' on 2024.11.15
+[2024-11-15T05:50:47.413+0000] {logging_mixin.py:190} INFO - Crawling news for '남아프리카 주식' on 2024.11.15
+[2024-11-15T05:50:49.341+0000] {logging_mixin.py:190} INFO - No news found for 남아프리카 주식 on 2024.11.15
+[2024-11-15T05:50:55.348+0000] {logging_mixin.py:190} INFO - Crawling news for '유럽 주식' on 2024.11.15
+[2024-11-15T05:51:03.662+0000] {logging_mixin.py:190} INFO - Crawling news for '공공사업 관련주' on 2024.11.15
+[2024-11-15T05:51:12.604+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 주식' on 2024.11.15
+[2024-11-15T05:51:23.911+0000] {logging_mixin.py:190} INFO - Crawling news for '인도 주식' on 2024.11.15
+[2024-11-15T05:51:31.146+0000] {logging_mixin.py:190} INFO - Crawling news for '러셀2000' on 2024.11.15
+[2024-11-15T05:51:40.956+0000] {logging_mixin.py:190} INFO - Crawling news for '필수 소비재 관련주' on 2024.11.15
+[2024-11-15T05:51:45.341+0000] {logging_mixin.py:190} INFO - No news found for 필수 소비재 관련주 on 2024.11.15
+[2024-11-15T05:51:55.352+0000] {logging_mixin.py:190} INFO - Crawling news for '사우디아라비아 주식' on 2024.11.15
+[2024-11-15T05:52:03.408+0000] {logging_mixin.py:190} INFO - Crawling news for 'TIPS' on 2024.11.15
+[2024-11-15T05:52:18.298+0000] {logging_mixin.py:190} INFO - Crawling news for 'MSCI USA 지수' on 2024.11.15
+[2024-11-15T05:52:20.999+0000] {logging_mixin.py:190} INFO - No news found for MSCI USA 지수 on 2024.11.15
+[2024-11-15T05:52:29.009+0000] {logging_mixin.py:190} INFO - Crawling news for 'MSCI World' on 2024.11.15
+[2024-11-15T05:52:35.062+0000] {logging_mixin.py:190} INFO - No news found for MSCI World on 2024.11.15
+[2024-11-15T05:55:13.567+0000] {job.py:229} INFO - Heartbeat recovered after 15.15 seconds
+[2024-11-15T05:55:14.259+0000] {logging_mixin.py:190} INFO - Azure SQL Database의 keyword_news 테이블에 데이터 저장 완료!
+[2024-11-15T05:55:16.190+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-15T05:55:17.259+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-15T05:55:17.284+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=keyword_news, task_id=crawl_news_task, run_id=manual__2024-11-15T05:45:10.839759+00:00, execution_date=20241115T054510, start_date=20241115T054530, end_date=20241115T055517
+[2024-11-15T05:55:17.767+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-15T05:55:17.769+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-15T05:55:17.771+0000] {logging_mixin.py:190} INFO - Dag name:keyword_news queued_at:2024-11-15 05:45:11.008562+00:00
+[2024-11-15T05:55:17.774+0000] {logging_mixin.py:190} INFO - Task hostname:0d5fac489432 operator:PythonOperator
+[2024-11-15T05:55:17.994+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-15T05:55:18.395+0000] {taskinstance.py:3895} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-15T05:55:18.407+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

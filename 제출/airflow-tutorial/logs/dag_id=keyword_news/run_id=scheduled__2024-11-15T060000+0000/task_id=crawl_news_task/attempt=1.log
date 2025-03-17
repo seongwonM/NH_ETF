@@ -1,0 +1,273 @@
+[2024-11-16T06:00:25.791+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-16T06:00:25.873+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: keyword_news.crawl_news_task scheduled__2024-11-15T06:00:00+00:00 [queued]>
+[2024-11-16T06:00:25.915+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: keyword_news.crawl_news_task scheduled__2024-11-15T06:00:00+00:00 [queued]>
+[2024-11-16T06:00:25.918+0000] {taskinstance.py:2866} INFO - Starting attempt 1 of 2
+[2024-11-16T06:00:25.996+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): crawl_news_task> on 2024-11-15 06:00:00+00:00
+[2024-11-16T06:00:26.044+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=1130) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-16T06:00:26.058+0000] {standard_task_runner.py:72} INFO - Started process 1132 to run task
+[2024-11-16T06:00:26.065+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'keyword_news', 'crawl_news_task', 'scheduled__2024-11-15T06:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/nh_keyword_news_crawling.py', '--cfg-path', '/tmp/tmp1yxkrk_p']
+[2024-11-16T06:00:26.086+0000] {standard_task_runner.py:105} INFO - Job 29: Subtask crawl_news_task
+[2024-11-16T06:00:26.380+0000] {task_command.py:467} INFO - Running <TaskInstance: keyword_news.crawl_news_task scheduled__2024-11-15T06:00:00+00:00 [running]> on host 25eebfd415ad
+[2024-11-16T06:00:27.126+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='keyword_news' AIRFLOW_CTX_TASK_ID='crawl_news_task' AIRFLOW_CTX_EXECUTION_DATE='2024-11-15T06:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-11-15T06:00:00+00:00'
+[2024-11-16T06:00:27.146+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-16T06:00:27.161+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-16T06:00:27.167+0000] {logging_mixin.py:190} INFO - Current task name:crawl_news_task state:running start_date:2024-11-16 06:00:25.875753+00:00
+[2024-11-16T06:00:27.178+0000] {logging_mixin.py:190} INFO - Dag name:keyword_news and current dag run status:running
+[2024-11-16T06:00:27.189+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-16T06:00:27.192+0000] {logging_mixin.py:190} INFO - Crawling news for '기술 관련주' on 2024.11.16
+[2024-11-16T06:00:34.978+0000] {logging_mixin.py:190} INFO - Crawling news for '에너지 관련주' on 2024.11.16
+[2024-11-16T06:00:43.076+0000] {logging_mixin.py:190} INFO - Crawling news for '회사채' on 2024.11.16
+[2024-11-16T06:00:49.590+0000] {logging_mixin.py:190} INFO - Crawling news for '아프리카' on 2024.11.16
+[2024-11-16T06:00:56.978+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 채권' on 2024.11.16
+[2024-11-16T06:01:07.512+0000] {logging_mixin.py:190} INFO - Crawling news for '헬스케어 관련주' on 2024.11.16
+[2024-11-16T06:01:12.866+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 주식' on 2024.11.16
+[2024-11-16T06:01:23.239+0000] {logging_mixin.py:190} INFO - Crawling news for '부동산 관련주' on 2024.11.16
+[2024-11-16T06:01:34.293+0000] {logging_mixin.py:190} INFO - Crawling news for 'AMD' on 2024.11.16
+[2024-11-16T06:01:45.250+0000] {logging_mixin.py:190} INFO - Crawling news for '경기 소비재 관련주' on 2024.11.16
+[2024-11-16T06:01:50.860+0000] {logging_mixin.py:190} INFO - Crawling news for '임의 소비재 관련주' on 2024.11.16
+[2024-11-16T06:01:59.689+0000] {logging_mixin.py:190} INFO - Crawling news for '아르헨티나 주식' on 2024.11.16
+[2024-11-16T06:02:09.499+0000] {logging_mixin.py:190} INFO - Crawling news for '산업재 관련주' on 2024.11.16
+[2024-11-16T06:02:10.401+0000] {logging_mixin.py:190} INFO - No news found for 산업재 관련주 on 2024.11.16
+[2024-11-16T06:02:16.446+0000] {logging_mixin.py:190} INFO - Crawling news for '중국 주식' on 2024.11.16
+[2024-11-16T06:02:25.396+0000] {logging_mixin.py:190} INFO - Crawling news for '금융 서비스 관련주' on 2024.11.16
+[2024-11-16T06:02:26.645+0000] {logging_mixin.py:190} INFO - No news found for 금융 서비스 관련주 on 2024.11.16
+[2024-11-16T06:02:34.652+0000] {logging_mixin.py:190} INFO - Crawling news for '브라질' on 2024.11.16
+[2024-11-16T06:02:41.233+0000] {logging_mixin.py:190} INFO - Crawling news for 'SnP 500' on 2024.11.16
+[2024-11-16T06:02:47.700+0000] {logging_mixin.py:190} INFO - Crawling news for '기초 소재 관련주' on 2024.11.16
+[2024-11-16T06:02:49.278+0000] {logging_mixin.py:190} INFO - No news found for 기초 소재 관련주 on 2024.11.16
+[2024-11-16T06:02:56.341+0000] {logging_mixin.py:190} INFO - Crawling news for '중국' on 2024.11.16
+[2024-11-16T06:03:04.064+0000] {logging_mixin.py:190} INFO - Crawling news for '다우존스' on 2024.11.16
+[2024-11-16T06:03:12.739+0000] {logging_mixin.py:190} INFO - Crawling news for 'DIS' on 2024.11.16
+[2024-11-16T06:03:27.740+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 국채' on 2024.11.16
+[2024-11-16T06:03:38.461+0000] {logging_mixin.py:190} INFO - Crawling news for '통신 서비스 관련주' on 2024.11.16
+[2024-11-16T06:03:44.772+0000] {logging_mixin.py:190} INFO - Crawling news for '호주 주식' on 2024.11.16
+[2024-11-16T06:03:50.184+0000] {logging_mixin.py:190} INFO - Crawling news for '독일 주식' on 2024.11.16
+[2024-11-16T06:03:55.641+0000] {logging_mixin.py:190} INFO - Crawling news for '일본 주식' on 2024.11.16
+[2024-11-16T06:04:02.846+0000] {logging_mixin.py:190} INFO - Crawling news for '멕시코 주식' on 2024.11.16
+[2024-11-16T06:04:12.139+0000] {logging_mixin.py:190} INFO - Crawling news for '한국 주식' on 2024.11.16
+[2024-11-16T06:04:19.232+0000] {logging_mixin.py:190} INFO - Crawling news for '브라질 주식' on 2024.11.16
+[2024-11-16T06:04:25.446+0000] {logging_mixin.py:190} INFO - Crawling news for '남아프리카 주식' on 2024.11.16
+[2024-11-16T06:04:35.586+0000] {logging_mixin.py:190} INFO - Error fetching news for 남아프리카 주식 on 2024.11.16: HTTPSConnectionPool(host='search.naver.com', port=443): Max retries exceeded with url: /search.naver?where=news&query=%EB%82%A8%EC%95%84%ED%94%84%EB%A6%AC%EC%B9%B4%20%EC%A3%BC%EC%8B%9D&sm=tab_opt&sort=0&photo=0&field=0&pd=3&ds=2024.11.16&de=2024.11.16&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from20241116to20241116,a:all&start=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1f605b2f30>: Failed to resolve 'search.naver.com' ([Errno -3] Temporary failure in name resolution)"))
+[2024-11-16T06:04:47.335+0000] {logging_mixin.py:190} INFO - Crawling news for '유럽 주식' on 2024.11.16
+[2024-11-16T06:05:17.752+0000] {logging_mixin.py:190} INFO - Error fetching news for 유럽 주식 on 2024.11.16: HTTPSConnectionPool(host='search.naver.com', port=443): Max retries exceeded with url: /search.naver?where=news&query=%EC%9C%A0%EB%9F%BD%20%EC%A3%BC%EC%8B%9D&sm=tab_opt&sort=0&photo=0&field=0&pd=3&ds=2024.11.16&de=2024.11.16&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from20241116to20241116,a:all&start=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1f606be180>: Failed to resolve 'search.naver.com' ([Errno -3] Temporary failure in name resolution)"))
+[2024-11-16T06:05:36.594+0000] {logging_mixin.py:190} INFO - Crawling news for '공공사업 관련주' on 2024.11.16
+[2024-11-16T06:05:19.832+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 166, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+         ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-11-16T06:06:26.111+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-11-16T06:06:35.249+0000] {logging_mixin.py:190} INFO - Error fetching news for 공공사업 관련주 on 2024.11.16: HTTPSConnectionPool(host='search.naver.com', port=443): Max retries exceeded with url: /search.naver?where=news&query=%EA%B3%B5%EA%B3%B5%EC%82%AC%EC%97%85%20%EA%B4%80%EB%A0%A8%EC%A3%BC&sm=tab_opt&sort=0&photo=0&field=0&pd=3&ds=2024.11.16&de=2024.11.16&docid=&related=0&mynews=0&office_type=0&office_section_code=0&news_office_checked=&nso=so:r,p:from20241116to20241116,a:all&start=1 (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0x7f1f605b2c00>: Failed to resolve 'search.naver.com' ([Errno -3] Temporary failure in name resolution)"))
+[2024-11-16T06:06:36.732+0000] {job.py:229} INFO - Heartbeat recovered after 134.57 seconds
+[2024-11-16T06:06:43.350+0000] {logging_mixin.py:190} INFO - Crawling news for '미국 주식' on 2024.11.16
+[2024-11-16T06:06:52.249+0000] {logging_mixin.py:190} INFO - Crawling news for '인도 주식' on 2024.11.16
+[2024-11-16T06:07:00.465+0000] {logging_mixin.py:190} INFO - Crawling news for '러셀2000' on 2024.11.16
+[2024-11-16T06:07:10.493+0000] {logging_mixin.py:190} INFO - Crawling news for '필수 소비재 관련주' on 2024.11.16
+[2024-11-16T06:07:11.166+0000] {logging_mixin.py:190} INFO - No news found for 필수 소비재 관련주 on 2024.11.16
+[2024-11-16T06:07:18.195+0000] {logging_mixin.py:190} INFO - Crawling news for '사우디아라비아 주식' on 2024.11.16
+[2024-11-16T06:07:25.783+0000] {logging_mixin.py:190} INFO - Crawling news for 'TIPS' on 2024.11.16
+[2024-11-16T06:07:32.205+0000] {logging_mixin.py:190} INFO - Crawling news for 'MSCI USA 지수' on 2024.11.16
+[2024-11-16T06:07:32.866+0000] {logging_mixin.py:190} INFO - No news found for MSCI USA 지수 on 2024.11.16
+[2024-11-16T06:07:38.875+0000] {logging_mixin.py:190} INFO - Crawling news for 'MSCI World' on 2024.11.16
+[2024-11-16T06:07:41.120+0000] {local_task_job_runner.py:346} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-11-16T06:07:41.129+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
+[2024-11-16T06:07:41.156+0000] {process_utils.py:132} INFO - Sending 15 to group 1132. PIDs of all processes in the group: [1132]
+[2024-11-16T06:07:41.164+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 1132
+[2024-11-16T06:07:41.174+0000] {taskinstance.py:3093} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-11-16T06:07:41.721+0000] {taskinstance.py:3311} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 417, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/nh_keyword_news_crawling.py", line 102, in crawl_news
+    time.sleep(random.randint(5, 10))  # 불규칙한 요청 간격 설정
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3095, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2024-11-16T06:07:42.004+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-11-16T06:07:42.006+0000] {logging_mixin.py:190} INFO - Task start:2024-11-16 06:00:25.875753+00:00 end:2024-11-16 06:07:41.875724+00:00 duration:435.999971
+[2024-11-16T06:07:42.016+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): crawl_news_task> dag:<DAG: keyword_news> dagrun:<DagRun keyword_news @ 2024-11-15 06:00:00+00:00: scheduled__2024-11-15T06:00:00+00:00, state:running, queued_at: 2024-11-16 06:00:00.574527+00:00. externally triggered: False>
+[2024-11-16T06:07:42.019+0000] {logging_mixin.py:190} INFO - Failure caused by Task received SIGTERM signal
+[2024-11-16T06:07:42.023+0000] {taskinstance.py:1225} INFO - Marking task as UP_FOR_RETRY. dag_id=keyword_news, task_id=crawl_news_task, run_id=scheduled__2024-11-15T06:00:00+00:00, execution_date=20241115T060000, start_date=20241116T060025, end_date=20241116T060741
+[2024-11-16T06:07:42.371+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-16T06:07:42.484+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=1132, status='terminated', exitcode=2, started='06:00:25') (1132) terminated with exit code 2

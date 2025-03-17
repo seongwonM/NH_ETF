@@ -1,0 +1,14 @@
+[2024-11-09T00:41:45.207+0000] {processor.py:186} INFO - Started process (PID=709) to work on /opt/airflow/dags/nh_news_crawling.py
+[2024-11-09T00:41:45.542+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/nh_news_crawling.py for tasks to queue
+[2024-11-09T00:41:45.631+0000] {logging_mixin.py:190} INFO - [2024-11-09T00:41:45.629+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/nh_news_crawling.py
+[2024-11-09T00:41:54.409+0000] {processor.py:925} INFO - DAG(s) 'daily_news_crawler' retrieved from /opt/airflow/dags/nh_news_crawling.py
+[2024-11-09T00:41:54.681+0000] {logging_mixin.py:190} INFO - [2024-11-09T00:41:54.679+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-09T00:41:54.958+0000] {logging_mixin.py:190} INFO - [2024-11-09T00:41:54.955+0000] {dag.py:4180} INFO - Setting next_dagrun for daily_news_crawler to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-09T00:41:55.249+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/nh_news_crawling.py took 10.925 seconds
+[2024-11-09T00:42:52.338+0000] {processor.py:186} INFO - Started process (PID=779) to work on /opt/airflow/dags/nh_news_crawling.py
+[2024-11-09T00:42:52.344+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/nh_news_crawling.py for tasks to queue
+[2024-11-09T00:42:52.353+0000] {logging_mixin.py:190} INFO - [2024-11-09T00:42:52.352+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/nh_news_crawling.py
+[2024-11-09T00:42:52.799+0000] {processor.py:925} INFO - DAG(s) 'daily_news_crawler' retrieved from /opt/airflow/dags/nh_news_crawling.py
+[2024-11-09T00:42:52.871+0000] {logging_mixin.py:190} INFO - [2024-11-09T00:42:52.870+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2024-11-09T00:42:52.949+0000] {logging_mixin.py:190} INFO - [2024-11-09T00:42:52.949+0000] {dag.py:4180} INFO - Setting next_dagrun for daily_news_crawler to 2024-11-08 00:00:00+00:00, run_after=2024-11-09 00:00:00+00:00
+[2024-11-09T00:42:53.017+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/nh_news_crawling.py took 0.690 seconds

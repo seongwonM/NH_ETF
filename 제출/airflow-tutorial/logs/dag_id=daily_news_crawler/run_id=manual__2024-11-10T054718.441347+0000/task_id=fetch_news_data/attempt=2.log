@@ -1,0 +1,27 @@
+[2024-11-10T05:52:33.226+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-10T05:52:33.259+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: daily_news_crawler.fetch_news_data manual__2024-11-10T05:47:18.441347+00:00 [queued]>
+[2024-11-10T05:52:33.274+0000] {taskinstance.py:2613} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: daily_news_crawler.fetch_news_data manual__2024-11-10T05:47:18.441347+00:00 [queued]>
+[2024-11-10T05:52:33.275+0000] {taskinstance.py:2866} INFO - Starting attempt 2 of 2
+[2024-11-10T05:52:33.300+0000] {taskinstance.py:2889} INFO - Executing <Task(PythonOperator): fetch_news_data> on 2024-11-10 05:47:18.441347+00:00
+[2024-11-10T05:52:33.315+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=317) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-10T05:52:33.319+0000] {standard_task_runner.py:72} INFO - Started process 319 to run task
+[2024-11-10T05:52:33.319+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'daily_news_crawler', 'fetch_news_data', 'manual__2024-11-10T05:47:18.441347+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/nh_news_crawling.py', '--cfg-path', '/tmp/tmp26c9105x']
+[2024-11-10T05:52:33.362+0000] {standard_task_runner.py:105} INFO - Job 14: Subtask fetch_news_data
+[2024-11-10T05:52:33.614+0000] {task_command.py:467} INFO - Running <TaskInstance: daily_news_crawler.fetch_news_data manual__2024-11-10T05:47:18.441347+00:00 [running]> on host 78c1584db90c
+[2024-11-10T05:52:33.823+0000] {taskinstance.py:3132} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='daily_news_crawler' AIRFLOW_CTX_TASK_ID='fetch_news_data' AIRFLOW_CTX_EXECUTION_DATE='2024-11-10T05:47:18.441347+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-10T05:47:18.441347+00:00'
+[2024-11-10T05:52:33.826+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-10T05:52:33.827+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-10T05:52:33.828+0000] {logging_mixin.py:190} INFO - Current task name:fetch_news_data state:running start_date:2024-11-10 05:52:33.260753+00:00
+[2024-11-10T05:52:33.829+0000] {logging_mixin.py:190} INFO - Dag name:daily_news_crawler and current dag run status:running
+[2024-11-10T05:52:33.830+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-10T05:52:38.255+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-10T05:52:38.319+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-10T05:52:38.322+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=daily_news_crawler, task_id=fetch_news_data, run_id=manual__2024-11-10T05:47:18.441347+00:00, execution_date=20241110T054718, start_date=20241110T055233, end_date=20241110T055238
+[2024-11-10T05:52:38.402+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-10T05:52:38.408+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-10T05:52:38.423+0000] {logging_mixin.py:190} INFO - Dag name:daily_news_crawler queued_at:2024-11-10 05:47:18.577162+00:00
+[2024-11-10T05:52:38.438+0000] {logging_mixin.py:190} INFO - Task hostname:78c1584db90c operator:PythonOperator
+[2024-11-10T05:52:38.579+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2024-11-10T05:52:38.600+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
